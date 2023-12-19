@@ -1,0 +1,36 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: eic}
+children:
+- type: Symbols
+  children:
+  - type: Boolean
+    attributes: {id: EIC_CHAN_1}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'false'}
+  - type: Hex
+    attributes: {id: EIC_EXTINTEO}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: eic, value: '0'}
+  - type: Hex
+    attributes: {id: EIC_INT}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: eic, value: '0'}
+  - type: Hex
+    attributes: {id: EIC_WAKEUP}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: eic, value: '0'}
+- type: ElementPosition
+  attributes: {x: '32', y: '140', id: eic}

@@ -1,0 +1,55 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: tc3}
+children:
+- type: Symbols
+  children:
+  - type: Integer
+    attributes: {id: TC_FREQUENCY}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: tc3, value: '48000000'}
+  - type: Boolean
+    attributes: {id: TC_TIMER_EVCTRL_OVFEO}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'false'}
+  - type: Long
+    attributes: {id: TC_TIMER_PERIOD}
+    children:
+    - type: Attributes
+      children:
+      - type: Long
+        attributes: {id: max}
+        children:
+        - {type: Value, value: '65535'}
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: tc3, value: '9600'}
+  - type: Float
+    attributes: {id: TC_TIMER_TIME_MS}
+    children:
+    - type: Attributes
+      children:
+      - type: Float
+        attributes: {id: max}
+        children:
+        - {type: Value, value: '1365.3334'}
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '200.0'}
+  - type: Combo
+    attributes: {id: TC_TIMER_UNIT}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: microsecond}
+- type: ElementPosition
+  attributes: {x: '190', y: '200', id: tc3}
